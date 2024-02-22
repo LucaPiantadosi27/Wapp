@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./style.css">
     <title>Boolzapp</title>
 </head>
+
 <body>
 
   <div class="big-container">
@@ -29,15 +30,60 @@
 
     <div class="app-container">
       <div id="wrapper-up">
+          <!-- Sidebar - lista delkle chat -->
           <div id="sidebar">
-              <div class="header-sidebar">
 
+              <!-- Header Sidebar -->
+              <div class="header-sidebar">
+                  <div class="box-profile">
+                      <img src="img/Luca Toni.jpg" alt="Personal Pic Profile">
+                      <div class="personal-name">Luca Toni</div>
+                  </div>
+
+                  <div class="header-icons">
+                      <i class="fa-solid fa-circle-notch"></i>
+                      <i class="fa-solid fa-message"></i>
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+              </div>
+
+              <!-- Avviso Notifiche Sidebar -->
+              <div class="popup-box">
+                  <div class="icon-popup">
+                      <i class="fa-solid fa-bell-slash"></i>
+                  </div>
+
+                  <div class="text-popup">
+                      <div class="title-popup">Ricevi notifiche di nuovi messaggi</div>
+                      <div class="link-popup"><a href="#">Attiva notifiche desktop</a></div>
+                  </div>
+              </div>
+
+              <!--  Input Search Chat -->
+              <div class="chat-search-box">
+                  <button class="search-button">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <input class="search-bar" type="text" placeholder="Cerca o inizia una nuova chat">
               </div>
           </div>
 
+          <!-- Main Content  -->
           <div id="main-content">
               <div id="topbar">
+                  <div class="box-profile">
+                      <img src="img/avatar_1.jpg" alt="Active Profile Pic Chat">
+                      <div class="box contact">
+                          <div class="personal-name">Michele</div>
+                          <div class="access">Ultimo accesso oggi alle 12:00</div>
+                      </div>
+                  </div>
 
+                  <div class="header-icons">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <i class="fa-solid fa-paperclip"></i>
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
               </div>
 
               <div id="main-part">
@@ -45,16 +91,14 @@
               </div>
 
               <div id="bottom-bar">
-
+  
               </div>
+
           </div>
       </div>
-
   </div>
-
+      
 </div>
-
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="./myscript.js"></script>
 </body>
 </html>
-    
