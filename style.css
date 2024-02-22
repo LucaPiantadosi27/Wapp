@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+
+
+/*  backContainer */
+.big-container {
+  height: 100vh;
+  position: relative;
+}
+
+.topbar {
+  width: 100%;
+  height: 150px;
+  background: #273a38;
+}
+
+.back-background {
+  width: 100%;
+  height: calc(100% - 150px);
+  background: #8d3030;
+}
+
+.app-container {
+  width: 80%;
+  height: calc(100vh - 50px);
+  margin: 0 auto;
+  background: rgb(73, 129, 146);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
