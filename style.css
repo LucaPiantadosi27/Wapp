@@ -25,6 +25,7 @@
   background: #8d3030;
 }
 
+/* frontContainer */
 .app-container {
   width: 80%;
   height: calc(100vh - 50px);
@@ -36,3 +37,46 @@
   transform: translate(-50%, -50%);
 }
 
+#wrapper-up {
+  height: 100%;
+  background-color: #353e50;
+  display: flex;
+}
+
+#sidebar {
+  min-width: 450px;
+  height: 100%;
+  background-color: #9ca35c;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-sidebar {
+  height: 60px;
+  background-color: #0b7c5a;
+}
+
+#main-content {
+  flex-grow: 1;
+  height: 100%;
+  overflow-y: auto;
+}
+
+#topbar {
+  height: 60px;
+  background-color: #0b7c5a;
+  display: flex;
+  border-left: 3px solid #9c9ea1;
+}
+
+#main-part {
+  height: calc(100% - 140px);
+  overflow-y: auto;
+}
+
+#bottom-bar {
+  height: 80px;
+  background-color: #7c3e0b;
+  display: flex;
+  border-left: 3px solid #353e50;
+}
