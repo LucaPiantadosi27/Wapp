@@ -71,7 +71,15 @@
 .box-profile img {
   width: 55px;
   height: 55px;
-  border-radius: 50%;
+  border-radius: 100%;
+}
+
+.box-profile .box-contact {
+    margin-left: 10px;
+}
+
+.header-sidebar .personal-name {
+    margin-left: 10px;
 }
 
 .box-profile .personal-name {
@@ -94,7 +102,7 @@
   background: #8edafc;
   display: flex;
   align-items: center;
-  padding: 18px;  
+  padding: 15px 18px;  
 }
 
 .icon-popup {
@@ -147,6 +155,53 @@
   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
 }
 
+/* Stili Lista Chats */
+.list-chat-box {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.box-chat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 22px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.active {
+  background-color: #d9dddd;
+  border: none;
+}
+
+.box-chat img {
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+}
+
+.box-chat .box-contact {
+  margin-left: 20px;
+}
+
+.box-chat .box-contact .personal-name {
+  font-size: 19px;
+}
+
+.box-contact .preview {
+  color: #8f8f8f;
+}
+
+.time-last-message {
+  display: flex;
+  align-self: flex-start;
+}
+
+.time {
+  color: #8f8f8f;
+}
+
 /* Stile MAIN CONTENT */
 #main-content {
   flex-grow: 1;
@@ -184,4 +239,38 @@
   background-color: #e5ddd5;
   display: flex;
   border-left: 2px solid #98a2b2;
+}
+.left-section {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emojis-button i, .voice-button i {
+  font-size: 26px;
+  color: #494949;
+}
+
+.middle-section {
+  width: 76%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.type-bar {
+  width: 100%;
+  height: 55px;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.right-section {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
