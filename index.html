@@ -23,8 +23,9 @@
 </head>
 
 <body>
-
+<!-- CONTENITORE PRINCIPALE -->
   <div class="big-container">
+    <!-- BACK -->
     <div class="back-topbar"></div>
     <div class="back-background"></div>
 
@@ -97,7 +98,7 @@
                         <div id="topbar">
                             <div class="box-profile">
                                 <img src="img/avatar_1.jpg" alt="">
-                                <div class="box-contact">
+                                <div class="box-contact"> 
                                     <div class="personal-name">Michele</div>
                                     <div class="access">Ultimo accesso oggi alle 12:00</div>
                                 </div>
@@ -110,8 +111,8 @@
                             </div>
                         </div>
 
-                        <!-- Sezione Centrale Chat Attiva -->
-                        <div id="main-part">
+                         <!-- Sezione Centrale Chat Attiva -->
+                         <div id="main-part">
                             <div v-for="(msg, i) in contacts[activeContact].messages" class="chat" :class="msg.status === true ? 'status': ''">
                                 <div class="message">{{msg.message}}</div>
                             </div>

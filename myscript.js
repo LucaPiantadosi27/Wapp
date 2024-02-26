@@ -199,14 +199,22 @@ createApp({
         }
     },
 
-
     methods: {
+
         colorMsg(i) {
+
             if(this.contacts[activeContact].messages[i].status === 'sent') {
+
                 this.contacts[activeContact].messages[i].status = 'received';
+
             } else {
+
                 this.contacts[activeContact].messages[i].status = 'sent';
+
             }
+
         }
+
     }
+
 }).mount("#app")
