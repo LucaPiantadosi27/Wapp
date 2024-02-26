@@ -25,7 +25,7 @@
 .back-background {
   width: 100%;
   height: calc(100% - 150px);
-  background: rgb(218, 219, 212);
+  background: rgb(218, 219, 213);
 }
 
 /* frontContainer */
@@ -40,6 +40,9 @@
   transform: translate(-50%, -50%);
 }
 
+i {
+  cursor: pointer;
+}
 #wrapper-up {
   height: 100%;
   background-color: rgb(234, 234, 234);
