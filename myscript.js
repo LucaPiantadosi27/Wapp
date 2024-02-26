@@ -41,6 +41,8 @@ createApp({
 
             search: '',
 
+            settingActive: false,
+
             activeContact: 0,
 
             contacts: [
@@ -253,6 +255,20 @@ createApp({
             }
         },
 
+        // Mostra / Nascondi le impostazioni del messaggio relativo (info e elimina messaggio)
+        toggleMessageSettings(i) {
+            this.settingActive = !this.settingActive;
+            this.activeMessage = i;
+        },
+        
 
+        // Cancella il messaggio 
+        deleteMessage(activeContact, i) {
+        this.contacts[activeContact].messages.splice(i, 1);
+        this.settingActive = !this.settingActive; 
+        },
+
+        
+        
     }
 }).mount("#app")
