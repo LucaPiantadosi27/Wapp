@@ -73,17 +73,17 @@
                     <div class="list-chat-box">
 
                         <!-- Ciclo For Chats -->
-                        <div v-for="(contact, i) in contacts" class="box-chat">
+                        <div v-for="(contact, i) in contacts" class="box-chat" :class="activeContact === i ? 'active' : ''" @click="activeChat(i)">
                             <div class="box-profile">
                                 <img :src="contact.avatar" alt="Fred Pic Chat">
                                 <div class="box-contact">
                                     <div class="personal-name">{{contact.name}}</div>
-                                    <div class="preview">Ultimo messaggio inviato</div>
+                                    <div class="preview" v-if="contact.messages.length > 0">{{contact.messages[contact.messages.length - 1].message}}</div>
                                 </div>
                             </div>
 
                             <div class="time-last-message">
-                                <div class="time">12:00</div>
+                                <div class="time">{{contact.messages[contact.messages.length - 1].date}}</div>
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                 <div id="main-content">
                     <div id="topbar">
                         <div class="box-profile">
-                            <img src="img/avatar_1.jpg" alt="">
+                            <img src="/img/avatar_1.jpg" alt="">
                             <div class="box-contact">
                                 <div class="personal-name">Michele</div>
                                 <div class="access">Ultimo accesso oggi alle 12:00</div>
@@ -109,8 +109,13 @@
 
                     <!-- Sezione Centrale Chat Attiva -->
                     <div id="main-part">
-                        <div v-for="(msg, i) in contacts[activeContact].messages" class="chat" :class="msg.status === true ? 'status': ''">
-                            <div class="message">{{msg.message}}</div>
+                        <div v-for="(msg, i) in contacts[activeContact].messages" class="chat" :class="msg.status === 'sent' ? 'sent': 'received'">
+                            <div class="message">{{msg.message}}
+                                <div class="checks-box">
+                                    <div class="check first"><i class="fa-solid fa-check"></i></div>
+                                    <div class="check second"><i class="fa-solid fa-check"></i></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

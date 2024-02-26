@@ -193,29 +193,37 @@ createApp({
 
                         }
                     ],
+                },
+                {
+                    name: 'Efisio',
+                    avatar: './img/avaatar.randomm.png',
+                    visible: true,
+                    messages: [
+                        {
+                            date: '10/01/2020 15:30:55',
+                            message: 'Ciao, quando fai uscire il prossimo album?',
+                            status: 'received'
+                        },
+                        {
+                            date: '10/01/2020 15:50:00',
+                            message: 'Spero presto...!',
+                            status: 'sent'
+                        },
+                        {
+                            date: '10/01/2020 15:51:00',
+                            message: 'Perfetto!!!',
+                            status: 'received'
+                        } 
+                    ],
                 }
-                
             ]
             
         }
     },
-
+    
     methods: {
-
-        colorMsg(i) {
-
-            if(this.contacts[activeContact].messages[i].status === 'sent') {
-
-                this.contacts[activeContact].messages[i].status = 'received';
-
-            } else {
-
-                this.contacts[activeContact].messages[i].status = 'sent';
-
-            }
-
-        }
-
+        activeChat(i) {
+            this.activeContact = i;
+        },
     }
-
 }).mount("#app")
