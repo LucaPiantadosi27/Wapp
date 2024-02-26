@@ -39,6 +39,8 @@ createApp({
                 status: 'received'
             },
 
+            search: '',
+
             activeContact: 0,
 
             contacts: [
@@ -237,16 +239,18 @@ createApp({
         activeChat(i) {
             this.activeContact = i;
         },
-        
+
        addMessage() {
             const activeContact = this.contacts[this.activeContact];
 
-            activeContact.messages.push({...this.inputMessage});
-            this.inputMessage.message = "";
+             if(this.inputMessage.message.length > 0 && this.inputMessage.message.trim().length > 0) {
+                activeContact.messages.push({...this.inputMessage});
+                this.inputMessage.message = "";
 
-            setTimeout(() => {
-                activeContact.messages.push({...this.outputMessage});
-            }, 1000);
+                setTimeout(() => {
+                    activeContact.messages.push({...this.outputMessage});
+                }, 1000);
+            }
         },
 
 
