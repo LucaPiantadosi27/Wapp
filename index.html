@@ -29,6 +29,7 @@
     <div class="back-topbar"></div>
     <div class="back-background"></div>
 
+    
     <div id="app">
         <!-- Contenitore Schermata App -->
         <div class="app-container">
@@ -106,6 +107,10 @@
                         </div>
 
                         <div class="header-icons">
+                            <button class="video-button">
+                                <i class="fa-solid fa-video"></i>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <i class="fa-solid fa-paperclip"></i>
                             <i class="fa-solid fa-ellipsis-vertical"></i>
@@ -143,7 +148,7 @@
                         <div class="middle-section">
 
                             <textarea class="type-area" placeholder="Scrivi un messaggio" v-model="inputMessage.message" @keyup.enter="addMessage" required></textarea>
-                            <span @click="addMessage" id="send-btn"><i class="fa-solid fa-paper-plane"></i></span>
+                            <!-- <span @click="addMessage" id="send-btn"><i class="fa-solid fa-paper-plane"></i></span> -->
                         
                         </div>
 

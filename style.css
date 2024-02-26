@@ -42,17 +42,18 @@
 
 #wrapper-up {
   height: 100%;
-  background-color: #353e50;
+  background-color: rgb(234, 234, 234);
   display: flex;
 }
 
 /*  Sidebar  */
 #sidebar {
-  min-width: 450px;
+  min-width: 451px;
   height: 100%;
-  background-color: #9ca35c;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
+  
 }
 
 .header-sidebar {
@@ -97,6 +98,19 @@
   color: #8f8f8f;
   padding: 0 8px;
 }
+
+.video-button{
+  border-radius: 25px;
+  padding: 3px;
+  border: 0.5px solid #cccccc;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.video-button i {
+  font-size: 20px;
+  padding: 10px ;
+}
+
 
 /* Stile Box PopUp */
 .popup-box {
@@ -163,6 +177,7 @@
 }
 .filter-button i {
   padding: 3px;
+  color: #494949c9;
   
 }
 
