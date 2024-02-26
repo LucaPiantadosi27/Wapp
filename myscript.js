@@ -39,11 +39,12 @@ createApp({
                 status: 'received'
             },
 
-            search: '',
-
+            activeContact: 0,
+            
             settingActive: false,
 
-            activeContact: 0,
+            search: '',
+            
 
             contacts: [
             
