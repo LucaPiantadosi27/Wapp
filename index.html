@@ -33,116 +33,112 @@
         <!-- Contenitore Schermata App -->
         <div class="app-container">
             <div id="wrapper-up">
-
                 <!-- Sezione Sidebar (Lista Chat) -->
                 <div id="sidebar">
                     <!-- Sezione Header Sidebar -->
-
-                        <!-- Sezione Header Sidebar -->
-                        <div class="header-sidebar">
-                            <div class="box-profile">
-                                <img src="img/Luca Toni.jpg" alt="">
-                                <div class="personal-name">Luca Toni</div>
-                            </div>
-
-                            <div class="header-icons">
-                                <i class="fa-solid fa-circle-notch"></i>
-                                <i class="fa-solid fa-message"></i>
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </div>
+                    <div class="header-sidebar">
+                        <div class="box-profile">
+                            <img src="img/Luca Toni.jpg" alt="">
+                            <div class="personal-name">Luca Toni</div>
                         </div>
 
-                        <!-- Sezione PopUp Notifiche Sidebar -->
-                        <div class="popup-box">
-                            <div class="icon-popup">
-                                <i class="fa-solid fa-bell-slash"></i>
-                            </div>
-
-                            <div class="text-popup">
-                                <div class="title-popup">Ricevi notifiche di nuovi messaggi</div>
-                                <div class="link-popup"><a href="#">Attiva notifiche desktop</a></div>
-                            </div>
-                        </div>
-
-                        <!-- Sezione Input Search Chat -->
-                        <div class="chat-search-box">
-                            <button class="search-button">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                            <input class="search-bar" type="text" placeholder="Cerca o inizia una nuova chat">
-                        </div>
-
-
-                        <!-- Sezione Chats -->
-                      <div class="list-chat-box">
-
-                            <!-- Ciclo For Chats -->
-                            <div v-for="(contact, i) in contacts" class="box-chat">
-                                <div class="box-profile">
-                                    <img :src="contact.avatar" alt="">
-                                    <div class="box-contact">
-                                        <div class="personal-name">{{contact.name}}</div>
-                                        <div class="preview">Ultimo messaggio inviato</div>
-                                    </div>
-                                </div>
-
-                                <div class="time-last-message">
-                                    <div class="time">12:00</div>
-                                </div>
-                            </div>
+                        <div class="header-icons">
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <i class="fa-solid fa-message"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
 
-                    <!-- Sezione Main Content (Chat Attiva + Input Messaggio) -->
-                    <div id="main-content">
-                        <div id="topbar">
+                    <!-- Sezione PopUp Notifiche Sidebar -->
+                    <div class="popup-box">
+                        <div class="icon-popup">
+                            <i class="fa-solid fa-bell-slash"></i>
+                        </div>
+
+                        <div class="text-popup">
+                            <div class="title-popup">Ricevi notifiche di nuovi messaggi</div>
+                            <div class="link-popup"><a href="#">Attiva notifiche desktop</a></div>
+                        </div>
+                    </div>
+
+                    <!-- Sezione Input Search Chat -->
+                    <div class="chat-search-box">
+                        <button class="search-button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <input class="search-bar" type="text" placeholder="Cerca o inizia una nuova chat">
+                    </div>
+
+                    <!-- Sezione Chats -->
+                    <div class="list-chat-box">
+
+                        <!-- Ciclo For Chats -->
+                        <div v-for="(contact, i) in contacts" class="box-chat">
                             <div class="box-profile">
-                                <img src="img/avatar_1.jpg" alt="">
-                                <div class="box-contact"> 
-                                    <div class="personal-name">Michele</div>
-                                    <div class="access">Ultimo accesso oggi alle 12:00</div>
+                                <img :src="contact.avatar" alt="Fred Pic Chat">
+                                <div class="box-contact">
+                                    <div class="personal-name">{{contact.name}}</div>
+                                    <div class="preview">Ultimo messaggio inviato</div>
                                 </div>
                             </div>
 
-                            <div class="header-icons">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                                <i class="fa-solid fa-paperclip"></i>
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </div>
-                        </div>
-
-                         <!-- Sezione Centrale Chat Attiva -->
-                         <div id="main-part">
-                            <div v-for="(msg, i) in contacts[activeContact].messages" class="chat" :class="msg.status === true ? 'status': ''">
-                                <div class="message">{{msg.message}}</div>
-                            </div>
-                        </div>
-
-                        <!-- Sezione Bottom Bar scrittura messaggio -->
-                        <div id="bottom-bar">
-                            <div class="left-section">
-                                <div class="emojis-button">
-                                    <a href="#"><i class="fa-regular fa-face-smile"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="middle-section">
-                                <textarea class="type-area" placeholder="Scrivi un messaggio" required></textarea>
-                                <span id="send-btn"><i class="fa-solid fa-paper-plane"></i></span>
-                            </div>
-
-                            <div class="right-section">
-                                <div class="voice-button">
-                                    <a href="#"><i class="fa-solid fa-microphone"></i></a>
-                                </div>
+                            <div class="time-last-message">
+                                <div class="time">12:00</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Sezione Main Content (Chat Attiva + Input Messaggio) -->
+                <div id="main-content">
+                    <div id="topbar">
+                        <div class="box-profile">
+                            <img src="img/avatar_1.jpg" alt="">
+                            <div class="box-contact">
+                                <div class="personal-name">Michele</div>
+                                <div class="access">Ultimo accesso oggi alle 12:00</div>
+                            </div>
+                        </div>
+
+                        <div class="header-icons">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-paperclip"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                    <!-- Sezione Centrale Chat Attiva -->
+                    <div id="main-part">
+                        <div v-for="(msg, i) in contacts[activeContact].messages" class="chat" :class="msg.status === true ? 'status': ''">
+                            <div class="message">{{msg.message}}</div>
+                        </div>
+                    </div>
+
+                    <!-- Sezione Bottom Bar scrittura messaggio -->
+                    <div id="bottom-bar">
+                        <div class="left-section">
+                            <div class="emojis-button">
+                                <a href="#"><i class="fa-regular fa-face-smile"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="middle-section">
+                            <textarea class="type-area" placeholder="Scrivi un messaggio" required></textarea>
+                            <span id="send-btn"><i class="fa-solid fa-paper-plane"></i></span>
+                        </div>
+
+                        <div class="right-section">
+                            <div class="voice-button">
+                                <a href="#"><i class="fa-solid fa-microphone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>       
-    </div>
+
+        </div>
+    </div>       
+</div>
 
     <script type="text/javascript" src="/myscript.js"></script>
 
