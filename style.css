@@ -42,21 +42,47 @@ body.dark-mode {
   color: white;
 }
 
+.dark-mode .video-button{
+  background-color: rgb(24, 34, 41);
+  color: white;
+}
+
 .dark-mode .chat-search-box{
   background-color: rgb(24, 34, 41);
+  color: #fff;
+}
+
+.dark-mode .search-button{
+  background-color: rgba(24, 34, 41, 0.514);
+  color: #fff;
+}
+
+.dark-mode .filter-button{
+  background-color: rgba(24, 34, 41, 0.514);
   color: #fff;
 }
 .dark-mode .box-chat {
   background-color: rgb(24, 34, 41);
   color: white;
 }
+
+.dark-mode .search-bar{
+  background-color: rgb(42, 57, 66);
+  color: white;
+  font-style: normal;
+}
 .dark-mode .list-chat-box{
-  background-color: rgb(17, 27, 33);
+  background-color: rgb(42, 57, 66);
   color: white;
 }
 .dark-mode #bottom-bar{
   background-color: rgb(24, 34, 41);
   color: #fff;
+}
+.dark-mode .type-area{
+  background-color: rgb(42, 57, 66);
+  color: white;
+  font-style: normal;
 }
 
 input{
