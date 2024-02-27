@@ -14,11 +14,11 @@ body.dark-mode {
   color: #fff;
 }
 .dark-mode .back-background {
-  background-color: rgb(41, 48, 56);
+  background-color: rgb(12, 19, 23);
   color: #fff;
 }
 .dark-mode .back-topbar{
-  background-color: rgb(27, 30, 32);
+  background-color: rgba(32, 44, 51, 0.404);
   color: #fff;
 }
 .dark-mode #main-part {
@@ -26,11 +26,57 @@ body.dark-mode {
   height: calc(100% - 150px);
   background-position: center;
   background-size: contain;
+  color: #000000;
+  font-size: 17px;
 }
 
-.dark-mode{
-  
+.dark-mode .header-sidebar{
+  background-color: rgb(32, 44, 51);
+  color: #fff;
 }
+.dark-mode #topbar{
+  background-color: rgb(32, 44, 51);
+  color: #fff;
+}
+.dark-mode #topbar .access{
+  color: white;
+}
+
+.dark-mode .chat-search-box{
+  background-color: rgb(24, 34, 41);
+  color: #fff;
+}
+.dark-mode .box-chat {
+  background-color: rgb(24, 34, 41);
+  color: white;
+}
+.dark-mode .list-chat-box{
+  background-color: rgb(17, 27, 33);
+  color: white;
+}
+.dark-mode #bottom-bar{
+  background-color: rgb(24, 34, 41);
+  color: #fff;
+}
+
+input{
+  /* background-color: rgb(24, 34, 41);
+  color: #fff; */
+}
+/* Dark mode Button */
+#darkModeToggle{
+  background-color: rgb(234, 234, 234);
+  border-radius: 20px;
+  font-size: 20px;
+  width: 45px;
+  padding: 10px;
+  color: rgb(143, 143, 143);
+  border: 1px solid rgb(128, 128, 128);
+  position: absolute;
+  right:80px;
+  margin-top: 15px ;
+}
+
 /* ----------- */
 :root {
   font-family: 'Poppins', sans-serif;
