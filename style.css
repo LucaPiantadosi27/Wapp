@@ -4,7 +4,34 @@
   box-sizing: border-box;
   list-style: none;
 }
+/* Dark mode try */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
 
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+.dark-mode .back-background {
+  background-color: rgb(41, 48, 56);
+  color: #fff;
+}
+.dark-mode .back-topbar{
+  background-color: rgb(27, 30, 32);
+  color: #fff;
+}
+.dark-mode #main-part {
+  background-image: url('/img/Dark-Wapp.webp'); 
+  height: calc(100% - 150px);
+  background-position: center;
+  background-size: contain;
+}
+
+.dark-mode{
+  
+}
+/* ----------- */
 :root {
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
